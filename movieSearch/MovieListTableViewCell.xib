@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MovieListTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieListTableViewCell" rowHeight="159" id="Kwf-tI-3o0" userLabel="Movies List Table View Cell" customClass="MovieListTableViewCell" customModule="movieSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kwf-tI-3o0" id="u5s-5F-dMw">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2C-Cn-mtH">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="159"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieName" translatesAutoresizingMaskIntoConstraints="NO" id="Nhw-Sg-0WN">
+                                <rect key="frame" x="8" y="8" width="100" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Lsg-gp-vaO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21o-pJ-gT6">
+                                <rect key="frame" x="116" y="8" width="250" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-Ys-AR0">
+                                <rect key="frame" x="68" y="111" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Kk2-Fa-wth"/>
+                                    <constraint firstAttribute="height" constant="40" id="k6x-OY-YJ3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the movie description and in this description we will show the movie details and all about the movie." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-fW-QHx">
+                                <rect key="frame" x="116" y="50.5" width="250" height="100.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="HiA-fW-QHx" firstAttribute="leading" secondItem="Nhw-Sg-0WN" secondAttribute="trailing" constant="8" id="2u5-WW-fdr"/>
+                            <constraint firstAttribute="bottom" secondItem="Nhw-Sg-0WN" secondAttribute="bottom" constant="8" id="5gx-FS-PnG"/>
+                            <constraint firstItem="Nhw-Sg-0WN" firstAttribute="leading" secondItem="J2C-Cn-mtH" secondAttribute="leading" constant="8" id="8If-wr-c60"/>
+                            <constraint firstItem="HiA-fW-QHx" firstAttribute="top" secondItem="21o-pJ-gT6" secondAttribute="bottom" constant="10" id="9as-R4-goY"/>
+                            <constraint firstAttribute="trailing" secondItem="HiA-fW-QHx" secondAttribute="trailing" constant="8" id="EtF-Nr-wi8"/>
+                            <constraint firstAttribute="trailing" secondItem="21o-pJ-gT6" secondAttribute="trailing" constant="8" id="GoE-SD-SFI"/>
+                            <constraint firstItem="Nhw-Sg-0WN" firstAttribute="bottom" secondItem="LTS-Ys-AR0" secondAttribute="bottom" id="Wh0-20-ppr"/>
+                            <constraint firstItem="21o-pJ-gT6" firstAttribute="leading" secondItem="Nhw-Sg-0WN" secondAttribute="trailing" constant="8" id="YZS-Vs-JHB"/>
+                            <constraint firstItem="Nhw-Sg-0WN" firstAttribute="trailing" secondItem="LTS-Ys-AR0" secondAttribute="trailing" id="ZXf-Iu-2Kt"/>
+                            <constraint firstItem="HiA-fW-QHx" firstAttribute="bottom" secondItem="Nhw-Sg-0WN" secondAttribute="bottom" id="axa-ts-UCG"/>
+                            <constraint firstItem="Nhw-Sg-0WN" firstAttribute="top" secondItem="J2C-Cn-mtH" secondAttribute="top" constant="8" id="xd0-SL-Nka"/>
+                            <constraint firstItem="21o-pJ-gT6" firstAttribute="top" secondItem="Nhw-Sg-0WN" secondAttribute="top" id="z8s-9K-UdI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J2C-Cn-mtH" firstAttribute="leading" secondItem="u5s-5F-dMw" secondAttribute="leading" id="NBi-0t-hFB"/>
+                    <constraint firstAttribute="trailing" secondItem="J2C-Cn-mtH" secondAttribute="trailing" id="Nes-7Z-i0V"/>
+                    <constraint firstItem="J2C-Cn-mtH" firstAttribute="top" secondItem="u5s-5F-dMw" secondAttribute="top" id="aPN-ms-jQH"/>
+                    <constraint firstAttribute="bottom" secondItem="J2C-Cn-mtH" secondAttribute="bottom" id="sJW-cN-RfF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favouriteButton" destination="LTS-Ys-AR0" id="G0J-Iu-I6e"/>
+                <outlet property="movieDescriptionLbl" destination="HiA-fW-QHx" id="854-oC-iia"/>
+                <outlet property="moviePosterImageView" destination="Nhw-Sg-0WN" id="LCN-s3-qRW"/>
+                <outlet property="movieTitleLbl" destination="21o-pJ-gT6" id="h8n-vp-VLF"/>
+            </connections>
+            <point key="canvasLocation" x="-42.028985507246382" y="209.93303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="movieName" width="624" height="351"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
